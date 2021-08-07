@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratia YOUTUBER</title>
+    
+    <style>
+    *{margin: 0; padding: 0; font-size: 1.2rem; list-style: none;} body{margin-bottom: 100px; padding: 10px; background: black;}
+    header{display: flex; justify-content: space-between; align-items: center; max-width: 1300px;
+    background: repeating-radial-gradient(rgb(252, 252, 253), rgb(132, 132, 172), rgb(57, 57, 146), blue); color: seashell;
+    padding: 10px; margin: 0 auto;}
+    header img {width: 100px; height: 100px; border-radius: 50%; background: salmon; text-align: center;}
+    .men{display: flex;} .men li{margin-left: 10px;}
+    h1{color: blanchedalmond; text-align: center; font-size: 80px;}
+    p{color: crimson; text-align: center; margin-top: 50px;}
+    @media (max-width:350px) {.men li{color: black; font-size: 15px;}h1{font-size: 40px;} }
+    </style>
+
+<!--GRID CSS-->
+<style>
+    img{max-width: 100%; display: block;}
+    
+    section{display: grid; grid-template-columns: 1fr 200px;
+     grid-gap: 20px; max-width: 800px; margin: 0 auto; padding: 100px;}
+    
+    .cont > div {margin-bottom: 70px; }
+    @media (max-width: 750px) {
+        section{grid-template-columns: 1fr;} .cont{display: flex; overflow: scroll;}
+        .cont > div {flex: 1 0 200px; margin: 0 10px;} }
+
+/*paragrafo*/
+.pr p {background: rgba(243, 241, 241, 0.6); padding: 1px; color: white; margin: 0px; }
+
+
+</style>
+</head>
+<body>
+    
+<header>
+    <a href=""><img src="0 (1).jpg" alt=""> </a>
+    <menu>
+        <ul class="men">
+            <li>Menu</li>
+            <li>Fotos</li>
+            <li>Videos</li>
+        </ul>
+    </menu>
+</header>
+
+<section>
+    <div class="pr"><img src="0 (1).jpg" alt=""><p>PARAGRAFO</p></div>
+    
+    <div class="cont">
+        <div class="pr"><img src="0 (1).jpg" alt=""><p>PARAGRAFO</p></div>
+        <div class="pr"><img src="0 (1).jpg" alt=""><p>PARAGRAFO</p></div>
+        <div class="pr"><img src="0 (1).jpg" alt=""><p>PARAGRAFO</p></div>
+        <div class="pr"><img src="0 (1).jpg" alt=""><p>PARAGRAFO</p></div>
+        <div class="pr"><img src="0 (1).jpg" alt=""><p>PARAGRAFO</p></div>
+        <div class="pr"><img src="0 (1).jpg" alt=""><p>PARAGRAFO</p></div>
+    </div>
+</section>
+
+</body>
+</html>

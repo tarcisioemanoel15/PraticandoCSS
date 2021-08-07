@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratia css ( Menu )</title>
+    
+    <style>
+    *{margin: 0; padding: 0; font-size: 1.2rem; list-style: none;} body{margin-bottom: 100px; padding: 10px; background: black;}
+    header{display: flex; justify-content: space-between; align-items: center; max-width: 1600px;
+    background: repeating-radial-gradient(rgb(252, 252, 253), rgb(132, 132, 172), rgb(57, 57, 146), blue); color: seashell;
+    padding: 10px; margin: 0 auto;}
+    header img {width: 100px; height: 100px; border-radius: 50%; background: salmon; text-align: center;}
+    .men{display: flex;} .men li{margin-left: 10px;}
+    h1{color: blanchedalmond; text-align: center; font-size: 80px;}
+    p{color: crimson; text-align: center; margin-top: 50px;}
+    @media (max-width:350px) {.men li{color: black; font-size: 15px;}h1{font-size: 40px;} }
+    </style>
+
+<!--GRID CSS-->
+<style>
+img{max-width: 100%;}
+section{display: grid; grid-template-columns: repeat(3, 1fr); max-width: 1500px; margin: 0 auto; padding: 100px; grid-gap: 20px;}
+section > div:nth-child(n + 4){ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 10px; align-items: center;}
+section > .anuncio {grid-column: 1; grid-row: 2 / 5; border-top: 10px solid springgreen; display: block;}    
+
+@media (max-width:750px) {
+    section {grid-template-columns: repeat(2, 1fr);}
+    section > div:nth-child(n + 4){display: block;}
+    section >  div.anuncio{grid-column: auto; grid-row: auto; order: -1;}
+}
+    
+    
+</style>
+</head>
+<body>
+    
+<header>
+    <a href=""><img src="0 (1).jpg" alt=""> </a>
+    <menu>
+        <ul class="men">
+            <li>Menu</li>
+            <li>Fotos</li>
+            <li>Videos</li>
+        </ul>
+    </menu>
+</header>
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <section>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div><img src="0 (1).jpg" alt=""><p>paragrafo</p></div>
+        <div class="anuncio"> <img src="0 (1).jpg" alt=""> <p>paragrafo</p> </div>
+    </section>
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+</body>
+</html>
